@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{asset('css/design.css')}}">
     <title>ruel-portfolio</title>
+    <link rel="stylesheet" href="{{ asset('css/all.min.css')}}" type="text/css">
     @vite('resources/css/app.css')
-    <link rel="stylesheet" href="{{ asset('css/fontawesome.min.css')}}">
     @livewireStyles
     @livewireScripts
 </head>
