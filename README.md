@@ -1,4 +1,4 @@
-## My Portffolio
+## My Portfolio
 
 ### Download and install the following tools:
 - [**NodeJS**](https://nodejs.org/) to execute `npm` commands.
