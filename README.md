@@ -14,20 +14,22 @@
 2. Open the cloned project in your code editor.
 3. Open terminal and execute the following commands:
 
-#### 
-    composer update
-#### 
+#### Install Backend dependencies:
+    composer install
+#### Install Frontend dependencies:
+    npm install
+#### Create Environment File:
     cp .env.example .env
-#### 
+#### Generate Application Key:
     php artisan key:generate
-#### 
+#### Compile Assets:
     npm run dev
-#### 
+#### Serve the Application:
     php artisan serve
 
     
 
 ### Production
-- Open <http://127.0.0.1:8000> in your web browser.
+- Access <http://127.0.0.1:8000> in your web browser.
 
 
