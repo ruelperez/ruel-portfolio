@@ -34,5 +34,6 @@
 
 ### Technologies Used
 - [Laravel Livewire](https://laravel-livewire.com/) both front and backend.
+- [Tailwind CSS](https://tailwindcss.com/docs/guides/laravel)
 
 
