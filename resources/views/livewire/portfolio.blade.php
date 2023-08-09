@@ -83,6 +83,9 @@
             <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><i class="fa-brands fa-css3-alt text-blue-500 text-8xl ml-20"></i></a>
             <a href="https://getbootstrap.com/" target="_blank"><i class="fa-brands fa-bootstrap text-violet-600 text-8xl ml-20"></i></a>
         </div>
+        <div class="flex ml-[75vh] mt-12">
+            <a href="https://vuejs.org/guide/introduction.html"><i class="fa-brands fa-vuejs text-green-600 text-8xl"></i></a>
+        </div>
     @endif
     @if($base == 3)
         <div class="flex ml-[25vh] mt-20 text-white">
