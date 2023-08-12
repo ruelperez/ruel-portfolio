@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/portfolio', function () {
     return view('main');
 });
+
+Route::get('/', function () {
+    return redirect('/portfolio');
+});
