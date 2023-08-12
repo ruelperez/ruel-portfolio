@@ -30,7 +30,7 @@
     
 
 ### Production
-- Access <http://127.0.0.1:8000/portfolio> in your web browser.
+- Access <http://127.0.0.1:8000> in your web browser.
 
 ### Technologies Used
 - [Laravel Livewire](https://laravel-livewire.com/) both **front-end** and **back-end**.
