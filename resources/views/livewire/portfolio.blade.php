@@ -1,38 +1,65 @@
 <div>
-    <div class="text-white w-[40vh] transform transition -translate-y-full duration-200 ease-in-out mt-[13vh] ml-8 bg-stone-900 lg:bg-stone-900 absolute md:block md:w-auto">
-        <ul class="font-medium lg:bg-stone-900 flex flex-col p-4 md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li class="cursor-pointer p-1 text-white @if($base == 0) bg-stone-500 @endif" wire:click="nav_click(0)">
-                About
-            </li>
-            <li class="cursor-pointer p-1 text-white @if($base == 2) bg-stone-500 @endif" wire:click="nav_click(2)">
-                Skills
-            </li>
-            <li class="cursor-pointer p-1 text-white @if($base == 3) bg-stone-500 @endif" wire:click="nav_click(3)">
-                Project
-            </li>
-            <li class="cursor-pointer p-1 text-white @if($base == 4) bg-stone-500 @endif" wire:click="nav_click(4)">
-                Contact
-            </li>
-        </ul>
+    <div class="relative md:hidden">
+        <div class="mobile-menu text-white w-[40vh] transform transition -translate-y-full duration-200 ease-in-out mt-[11vh] ml-8 bg-stone-900 lg:bg-stone-900 absolute md:block md:w-auto">
+            <ul class="font-medium lg:bg-stone-900 flex flex-col p-4 md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <li class="cursor-pointer p-1 text-white @if($base == 0) bg-stone-500 @endif" wire:click="nav_click(0)">
+                    About
+                </li>
+                <li class="cursor-pointer p-1 text-white @if($base == 2) bg-stone-500 @endif" wire:click="nav_click(2)">
+                    Skills
+                </li>
+                <li class="cursor-pointer p-1 text-white @if($base == 3) bg-stone-500 @endif" wire:click="nav_click(3)">
+                    Project
+                </li>
+                <li class="cursor-pointer p-1 text-white @if($base == 4) bg-stone-500 @endif" wire:click="nav_click(4)">
+                    Contact
+                </li>
+            </ul>
+        </div>
+        <div class="profile-menu text-white w-[30vh] transform transition min-h-screen -translate-x-full duration-200 ease-in-out mt-[11vh] bg-stone-900 lg:bg-stone-900 absolute md:block md:w-auto">
+
+        </div>
     </div>
     <nav class="bg-stone-900 border-gray-200 relative dark:bg-gray-900">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <div class="ml-7">
-                <div class="logo flex pt-1">
-                    <h3 class="text-white pt-1 ml-20  text-3xl">Ruel</h3><h3 class="text-blue-500 pt-1 text-3xl">Dev</h3>
+        <div class="max-w-screen-xl flex justify-between md:justify-between items-center p-2">
+            <div class="ml-3 md:hidden">
+                <i class="fa-solid fa-bars text-white text-xl" onclick="profile()"></i>
+            </div>
+            <div class="ml-[5.5vh] md:ml-[7vh]">
+                <div class="logo flex">
+                    <h3 class="text-white p-1 ml-10  text-3xl">Ruel</h3><h3 class="text-blue-500 pt-1 text-3xl">Dev</h3>
                 </div>
-                <div class="flex ml-12">
+                <div class="flex ml-4">
                     <div class="text-white font-mono mr-4">R U E L</div>
-                    <div class="text-white font-mono">P E R E Z</div>
+                    <div class="text-white font-mono mr-3">P E R E Z</div>
                 </div>
             </div>
-            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                </svg>
-            </button>
+
+            <div>
+                <button onclick="clickBar()" type="button" class= "p-1 w-10 h-10 text-sm text-gray-500 rounded-lg md:hidden ml-[5vh]  focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                    <i class="fa-solid fa-ellipsis-vertical text-white text-xl"></i>
+                </button>
+            </div>
+
+            <div class="md:text-white md:w-[40vh] md:ml-[50vh] md:right-[13vh] absolute  invisible md:visible">
+                <ul class="md:font-medium md:bg-stone-900 md:flex md:p-4  md:mt-0 ">
+                    <li class="md:cursor-pointer md:px-4 md:p-2 md:text-white @if($base == 0) md:bg-stone-500 @endif" wire:click="nav_click(0)">
+                        About
+                    </li>
+                    <li class="md:cursor-pointer md:px-4 md:p-2 md:text-white @if($base == 2) md:bg-stone-500 @endif" wire:click="nav_click(2)">
+                        Skills
+                    </li>
+                    <li class="md:cursor-pointer md:px-4 md:p-2 md:text-white @if($base == 3) md:bg-stone-500 @endif" wire:click="nav_click(3)">
+                        Project
+                    </li>
+                    <li class="md:cursor-pointer md:px-4 md:p-2 md:text-white @if($base == 4) md:bg-stone-500 @endif" wire:click="nav_click(4)">
+                        Contact
+                    </li>
+                </ul>
+            </div>
+
         </div>
+
     </nav>
 
 {{--About--}}
@@ -161,3 +188,10 @@
         </div>
     @endif
 </div>
+
+<script>
+    function clickBar(){
+        var menu = document.querySelector('.mobile-menu');
+        menu.classList.toggle('-translate-y-full');
+    }
+</script>

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{asset('css/design.css')}}">
     <link rel="stylesheet" href="{{asset('css/flowbite.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/fontawesome.min.css')}}">
     <title>ruel-portfolio</title>
     <link rel="stylesheet" href="{{ asset('css/all.min.css')}}" type="text/css">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
