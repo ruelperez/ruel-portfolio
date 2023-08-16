@@ -1,8 +1,23 @@
 <div>
-
-    <nav class="bg-stone-900 border-gray-200 dark:bg-gray-900">
+    <div class="text-white w-[40vh] transform transition -translate-y-full duration-200 ease-in-out mt-[13vh] ml-8 bg-stone-900 lg:bg-stone-900 absolute md:block md:w-auto">
+        <ul class="font-medium lg:bg-stone-900 flex flex-col p-4 md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li class="cursor-pointer p-1 text-white @if($base == 0) bg-stone-500 @endif" wire:click="nav_click(0)">
+                About
+            </li>
+            <li class="cursor-pointer p-1 text-white @if($base == 2) bg-stone-500 @endif" wire:click="nav_click(2)">
+                Skills
+            </li>
+            <li class="cursor-pointer p-1 text-white @if($base == 3) bg-stone-500 @endif" wire:click="nav_click(3)">
+                Project
+            </li>
+            <li class="cursor-pointer p-1 text-white @if($base == 4) bg-stone-500 @endif" wire:click="nav_click(4)">
+                Contact
+            </li>
+        </ul>
+    </div>
+    <nav class="bg-stone-900 border-gray-200 relative dark:bg-gray-900">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <div>
+            <div class="ml-7">
                 <div class="logo flex pt-1">
                     <h3 class="text-white pt-1 ml-20  text-3xl">Ruel</h3><h3 class="text-blue-500 pt-1 text-3xl">Dev</h3>
                 </div>
@@ -17,28 +32,22 @@
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
                 </svg>
             </button>
-            <div class="hidden  w-full md:block md:w-auto" id="navbar-default">
-                <ul class="font-medium  flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                    <li class="cursor-pointer  hover:text-blue-400 @if($base == 0) text-blue-500 @endif" wire:click="nav_click(0)">
-                        About
-                    </li>
-                    <li class="cursor-pointer hover:text-blue-400 @if($base == 2) text-blue-500 @endif" wire:click="nav_click(2)">
-                        Skills
-                    </li>
-                    <li class="cursor-pointer hover:text-blue-400 @if($base == 3) text-blue-500 @endif" wire:click="nav_click(3)">
-                        Project
-                    </li>
-                    <li class="cursor-pointer hover:text-blue-400 @if($base == 4) text-blue-500 @endif" wire:click="nav_click(4)">
-                        Contact
-                    </li>
-                </ul>
-            </div>
         </div>
     </nav>
-    
+
 {{--About--}}
     @if($base == 0)
-        <div class="flex text-white ">
+        <div class="text-white">
+            <div class="w-screen">
+                <img src="{{asset('image/profile.jpg')}}" class="rounded-full ml-[16vh] mt-[3vh] transition-transform hover:scale-125" width="140">
+                <h4 class="font-mono mt-1 text-center">Ruel Flor Perez</h4>
+                <h5 class="text-sm text-center mt-1">Aspiring to become Software Engineer</h5>
+                <div class="flex mt-3">
+                    <a href="https://www.facebook.com/ruel.perez.5473894" target="_blank"><img src="{{asset('image/fb-icon.jpg')}}" class="rounded-full ml-[17vh] cursor-pointer transition-transform hover:scale-125" width="40"></a>
+                    <a href="https://github.com/ruelperez" target="_blank"><img src="{{asset('image/github-icon.jpg')}}" class="rounded-full ml-[4vh] cursor-pointer transition-transform hover:scale-125" width="40"></a>
+                </div>
+
+            </div>
             <div class="w-3/5">
                 <div class="flex ml-[25vh] mt-20">
                     <div class="w-1.5 h-10 bg-blue-500">
@@ -57,17 +66,6 @@
                         <i class="fa-solid fa-envelope text-blue-500 text-2xl pt-4"></i>
                         <h1>karuelflorperezz@gmail.com</h1>
                     </div>
-                </div>
-
-            </div>
-
-            <div class="w-2/5">
-                <img src="{{asset('image/profile.jpg')}}" class="rounded-full ml-[18vh] mt-[10vh] transition-transform hover:scale-125" width="250">
-                <h5 class="text-lg pl-[25vh] font-mono mt-3">Ruel Flor Perez</h5>
-                <h5 class="text-lg pl-[15vh] mt-3">Aspiring to become Software Engineer</h5>
-                <div class="flex ml-[9vh]">
-                    <a href="https://www.facebook.com/ruel.perez.5473894" target="_blank"><img src="{{asset('image/fb-icon.jpg')}}" class="rounded-full ml-[18vh] mt-[5vh] cursor-pointer transition-transform hover:scale-125" width="40"></a>
-                    <a href="https://github.com/ruelperez" target="_blank"><img src="{{asset('image/github-icon.jpg')}}" class="rounded-full ml-[4vh] mt-[5vh] cursor-pointer transition-transform hover:scale-125" width="40"></a>
                 </div>
 
             </div>
