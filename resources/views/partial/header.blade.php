@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{asset('css/design.css')}}">
     <title>ruel-portfolio</title>
     <link rel="stylesheet" href="{{ asset('css/all.min.css')}}" type="text/css">
-    @vite('resources/css/app.css')
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
     @livewireScripts
 </head>
