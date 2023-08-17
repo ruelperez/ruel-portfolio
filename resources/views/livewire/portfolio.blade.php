@@ -116,23 +116,43 @@
     @endif
 {{--  Skills  --}}
     @if($base == 2)
-        <div class="flex ml-[25vh] mt-20 text-white">
-            <div class="w-1.5 h-10 bg-blue-500">
+        <div class="flex ml-[5vh] mt-10 md:ml-[11vh] text-white">
+            <div class="w-1 h-8 bg-blue-500">
             </div>
-            <h2 class="text-3xl ml-2">Skills</h2>
+            <h2 class="text-2xl ml-2">Skills</h2>
         </div>
-        <div class="flex ml-[75vh]">
-            <a href="https://laravel.com/" target="_blank"><i class="fa-brands fa-laravel text-red-500 text-8xl mt-10"></i></a>
-            <a href="https://tailwindcss.com/docs/guides/laravel" target="_blank"><img src="{{asset('image/tailwind-logo.jpg')}}" width="200"></a>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><i class="fa-brands fa-square-js text-yellow-300 text-8xl mt-12 ml-5"></i></a>
+        <div class="flex w-2/4 ml-auto mr-auto mt-12">
+            <div class="mr-auto">
+                <a href="https://laravel.com/" target="_blank"><i class="fa-brands fa-laravel text-red-500 ml-auto text-7xl"></i></a>
+            </div>
+            <div class="ml-auto">
+                <a href="https://vuejs.org/guide/introduction.html"><i class="fa-brands fa-vuejs text-green-600 text-7xl"></i></a>
+            </div>
         </div>
-        <div class="flex ml-[75vh]">
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><i class="fa-brands fa-html5 text-orange-500 text-8xl"></i></a>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><i class="fa-brands fa-css3-alt text-blue-500 text-8xl ml-20"></i></a>
-            <a href="https://getbootstrap.com/" target="_blank"><i class="fa-brands fa-bootstrap text-violet-600 text-8xl ml-20"></i></a>
+        <div class="flex w-2/4 ml-auto mr-auto mt-10">
+            <div class="mr-auto">
+                <a href="https://vuejs.org/guide/introduction.html"><i class="fa-brands fa-react text-blue-500 text-7xl"></i></a>
+            </div>
+            <div class="ml-auto">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><i class="fa-brands fa-square-js text-yellow-300 text-7xl"></i></a>
+            </div>
         </div>
-        <div class="flex ml-[75vh] mt-12">
-            <a href="https://vuejs.org/guide/introduction.html"><i class="fa-brands fa-vuejs text-green-600 text-8xl"></i></a>
+        <div class="flex w-2/4 ml-auto mr-auto mt-10">
+            <div class="mr-auto">
+                <a  href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><i class="fa-brands fa-html5 text-orange-500 text-7xl"></i></a>
+            </div>
+            <div class="ml-auto">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><i class="fa-brands fa-css3-alt text-blue-500 text-7xl"></i></a>
+            </div>
+
+        </div>
+        <div class="flex w-2/4 ml-auto mr-auto mt-10">
+            <div class="mr-auto">
+                <a href="https://tailwindcss.com/docs/guides/laravel" target="_blank"><img src="https://api.iconify.design/devicon:tailwindcss.svg" width="80"/></a>
+            </div>
+            <div class="ml-auto">
+                <a href="https://getbootstrap.com/" target="_blank"><i class="fa-brands fa-bootstrap text-violet-600 text-6xl"></i></a>
+            </div>
         </div>
     @endif
 {{-- Project--}}
