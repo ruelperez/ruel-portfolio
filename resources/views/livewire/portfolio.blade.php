@@ -58,7 +58,7 @@
                 </button>
             </div>
 
-            <div class="md:text-white md:w-[40vh] md:ml-[50vh] md:right-[13vh] absolute  invisible md:visible">
+            <div class="md:text-white md:w-[40vh] md:ml-[50vh] md:right-[13vh] absolute xl:mr-20  invisible md:visible">
                 <ul class="md:font-medium md:bg-stone-900 md:flex md:p-4  md:mt-0 ">
                     <li class="md:cursor-pointer md:px-4 md:p-2 md:text-white @if($base == 0) md:bg-stone-500 @endif" wire:click="nav_click(0)">
                         About
@@ -81,33 +81,33 @@
 
 {{--About--}}
     @if($base == 0)
-        <div class="text-white">
-            <div class="w-3/5">
-                <div class="flex ml-[5vh] mt-10">
+        <div class="text-white md:flex">
+            <div class="w-[44vh] md:w-3/5">
+                <div class="flex ml-[5vh] mt-10 md:ml-[11vh]">
                     <div class="w-1 h-8 bg-blue-500">
                     </div>
                     <h2 class="text-2xl ml-1">About</h2>
                 </div>
-                <div class="ml-[5vh] mt-5 w-[40vh] text-justify">
-                    Hello world! I'm Ruel Perez, aspiring to become a Software Engineer. I'm a fresh graduate from <a href="https://www.facebook.com/ACLCCollegeIRIGA" class="text-blue-500" target="_blank">ACLC College of Iriga,</a> class of 2023. I hold a Bachelor's degree in Computer Science. I have experience in various programming languages, but my specialized programming language is <a href="https://laravel.com/" class="text-blue-500" target="_blank">Laravel PHP framework</a> and its special feature, <a href="https://laravel-livewire.com/" class="text-blue-500" target="_blank">Laravel Livewire.</a>
+                <div class="ml-[5vh] md:ml-[11vh] mt-5 md:3-3/5 text-justify">
+                    Hello world! I'm Ruel Perez, aspiring to become a Software Engineer. I'm a fresh graduate from <a href="https://www.facebook.com/ACLCCollegeIRIGA" class="text-blue-500" target="_blank">ACLC College of Iriga,</a> class of 2023. I hold a Bachelor's degree in Computer Science. I have experience in various programming languages, I currently learning Vue and React but my specialized programming language is <a href="https://laravel.com/" class="text-blue-500" target="_blank">Laravel PHP framework</a> and its special feature, <a href="https://laravel-livewire.com/" class="text-blue-500" target="_blank">Laravel Livewire.</a>
                 </div>
-                <div class="flex ml-[25vh] mt-[20vh] hidden md:block">
+                <div class="flex md:flex md:ml-20  ml-[25vh] mt-[20vh] hidden md:block">
                     <div class="bg-stone-900 w-[38vh] text-center pb-4">
                         <i class="fa-solid fa-phone text-blue-500 text-2xl pt-4"></i>
                         <h1 class="text-1xl mt-2">09955415702</h1>
                     </div>
-                    <div class="bg-stone-900 w-[38vh] text-center ml-10 pb-4">
+                    <div class="bg-stone-900 w-[38vh] md:ml-5 text-center ml-10 pb-4">
                         <i class="fa-solid fa-envelope text-blue-500 text-2xl pt-4"></i>
                         <h1>karuelflorperezz@gmail.com</h1>
                     </div>
                 </div>
             </div>
-            <div class="w-screen hidden md:block">
-                <img src="{{asset('image/profile.jpg')}}" class="rounded-full ml-[16vh] mt-[3vh] transition-transform hover:scale-125" width="140">
-                <h4 class="font-mono mt-1 text-center">Ruel Flor Perez</h4>
-                <h5 class="text-sm text-center mt-1">Aspiring to become Software Engineer</h5>
-                <div class="flex mt-3">
-                    <a href="https://www.facebook.com/ruel.perez.5473894" target="_blank"><img src="{{asset('image/fb-icon.jpg')}}" class="rounded-full ml-[17vh] cursor-pointer transition-transform hover:scale-125" width="40"></a>
+            <div class="w-screen md:w-2/5 md:mt-7 hidden md:block">
+                <img src="{{asset('image/profile.jpg')}}" class="rounded-full md:ml-auto md:mr-auto ml-[24vh] mt-[3vh] ml-25 transition-transform hover:scale-125 md:" width="180">
+                <h4 class="font-mono mt-1 ml-1 text-center">Ruel Flor Perez</h4>
+                <h5 class="text-md text-center mt-1 md:mt-3">Aspiring to become Software Engineer</h5>
+                <div class="flex mt-3 md:mt-8 md:w-6/12 md:ml-auto md:mr-auto">
+                    <a href="https://www.facebook.com/ruel.perez.5473894" target="_blank"><img src="{{asset('image/fb-icon.jpg')}}" class="rounded-full ml-[17vh] md:ml-8 lg:ml-12 xl:ml-20 cursor-pointer transition-transform hover:scale-125" width="40"></a>
                     <a href="https://github.com/ruelperez" target="_blank"><img src="{{asset('image/github-icon.jpg')}}" class="rounded-full ml-[4vh] cursor-pointer transition-transform hover:scale-125" width="40"></a>
                 </div>
             </div>
