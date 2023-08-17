@@ -25,6 +25,14 @@
                     <a href="https://www.facebook.com/ruel.perez.5473894" target="_blank"><img src="{{asset('image/fb-icon.jpg')}}" class="rounded-full ml-[8vh] md:right-0 cursor-pointer transition-transform hover:scale-125" width="40"></a>
                     <a href="https://github.com/ruelperez" target="_blank"><img src="{{asset('image/github-icon.jpg')}}" class="rounded-full ml-[4vh] cursor-pointer transition-transform hover:scale-125" width="40"></a>
                 </div>
+                <div class="bg-stone-900 w-[30vh] text-center pb-4 mt-7">
+                    <i class="fa-solid fa-phone text-blue-500 text-2xl pt-4"></i>
+                    <h1 class="text-1xl mt-2">09955415702</h1>
+                </div>
+                <div class="w-[28vh] text-center mt-5 ml-2 p-3">
+                    <i class="fa-solid fa-envelope text-blue-500 text-2xl"></i>
+                    <h5 class="text-sm">karuelflorperezz@gmail.com</h5>
+                </div>
             </div>
         </div>
     </div>
@@ -74,15 +82,15 @@
     @if($base == 0)
         <div class="text-white">
             <div class="w-3/5">
-                <div class="flex ml-[25vh] mt-20">
-                    <div class="w-1.5 h-10 bg-blue-500">
+                <div class="flex ml-[5vh] mt-10">
+                    <div class="w-1 h-8 bg-blue-500">
                     </div>
-                    <h2 class="text-3xl ml-2">About</h2>
+                    <h2 class="text-2xl ml-1">About</h2>
                 </div>
-                <div class="ml-[25vh] mt-10 pr-20">
+                <div class="ml-[5vh] mt-5 w-[40vh] text-justify">
                     Hello world! I'm Ruel Perez, aspiring to become a Software Engineer. I'm a fresh graduate from <a href="https://www.facebook.com/ACLCCollegeIRIGA" class="text-blue-500" target="_blank">ACLC College of Iriga,</a> class of 2023. I hold a Bachelor's degree in Computer Science. I have experience in various programming languages, but my specialized programming language is <a href="https://laravel.com/" class="text-blue-500" target="_blank">Laravel PHP framework</a> and its special feature, <a href="https://laravel-livewire.com/" class="text-blue-500" target="_blank">Laravel Livewire.</a>
                 </div>
-                <div class="flex ml-[25vh] mt-[20vh]">
+                <div class="flex ml-[25vh] mt-[20vh] hidden md:block">
                     <div class="bg-stone-900 w-[38vh] text-center pb-4">
                         <i class="fa-solid fa-phone text-blue-500 text-2xl pt-4"></i>
                         <h1 class="text-1xl mt-2">09955415702</h1>
