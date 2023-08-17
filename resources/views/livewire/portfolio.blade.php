@@ -1,7 +1,7 @@
 <div>
     <div class="relative md:hidden">
-        <div class="mobile-menu text-white w-[40vh] transform transition -translate-y-full duration-200 ease-in-out mt-[11vh] ml-8 bg-stone-900 lg:bg-stone-900 absolute md:block md:w-auto">
-            <ul class="font-medium lg:bg-stone-900 flex flex-col p-4 md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <div class="mobile-menu text-white w-[40vh] transform transition  duration-200 ease-in-out mt-[11vh] ml-8 bg-stone-900 lg:bg-stone-900 absolute">
+            <ul class="font-medium flex-col p-4">
                 <li class="cursor-pointer p-1 text-white @if($base == 0) bg-stone-500 @endif" wire:click="nav_click(0)">
                     About
                 </li>
@@ -101,7 +101,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-screen">
+            <div class="w-screen hidden md:block">
                 <img src="{{asset('image/profile.jpg')}}" class="rounded-full ml-[16vh] mt-[3vh] transition-transform hover:scale-125" width="140">
                 <h4 class="font-mono mt-1 text-center">Ruel Flor Perez</h4>
                 <h5 class="text-sm text-center mt-1">Aspiring to become Software Engineer</h5>
