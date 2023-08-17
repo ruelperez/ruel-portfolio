@@ -1,21 +1,6 @@
 <div>
     <div class="relative md:hidden">
-        <div class="mobile-menu text-white w-[40vh] transform transition  duration-200 ease-in-out mt-[11vh] ml-8 bg-stone-900 lg:bg-stone-900 absolute">
-            <ul class="font-medium flex-col p-4">
-                <li class="cursor-pointer p-1 text-white @if($base == 0) bg-stone-500 @endif" wire:click="nav_click(0)">
-                    About
-                </li>
-                <li class="cursor-pointer p-1 text-white @if($base == 2) bg-stone-500 @endif" wire:click="nav_click(2)">
-                    Skills
-                </li>
-                <li class="cursor-pointer p-1 text-white @if($base == 3) bg-stone-500 @endif" wire:click="nav_click(3)">
-                    Project
-                </li>
-                <li class="cursor-pointer p-1 text-white @if($base == 4) bg-stone-500 @endif" wire:click="nav_click(4)">
-                    Contact
-                </li>
-            </ul>
-        </div>
+
 {{--    Profile    --}}
         <div class="profile-menu text-white w-[30vh] transform transition min-h-screen  -translate-x-full duration-200 ease-in-out mt-[11vh] bg-stone-900 lg:bg-stone-900 absolute md:block md:w-auto">
             <div class="w-screen">
@@ -34,6 +19,22 @@
                     <h5 class="text-sm">karuelflorperezz@gmail.com</h5>
                 </div>
             </div>
+        </div>
+        <div class="mobile-menu text-white w-[40vh] transform transition -translate-y-full duration-200 ease-in-out mt-[11vh] ml-8 bg-stone-900 lg:bg-stone-900 absolute">
+            <ul class="font-medium flex-col p-4">
+                <li class="cursor-pointer p-1 text-white @if($base == 0) bg-stone-500 @endif" wire:click="nav_click(0)">
+                    About
+                </li>
+                <li class="cursor-pointer p-1 text-white @if($base == 2) bg-stone-500 @endif" wire:click="nav_click(2)">
+                    Skills
+                </li>
+                <li class="cursor-pointer p-1 text-white @if($base == 3) bg-stone-500 @endif" wire:click="nav_click(3)">
+                    Project
+                </li>
+                <li class="cursor-pointer p-1 text-white @if($base == 4) bg-stone-500 @endif" wire:click="nav_click(4)">
+                    Contact
+                </li>
+            </ul>
         </div>
     </div>
     <nav class="bg-stone-900 border-gray-200 relative dark:bg-gray-900">
