@@ -16,8 +16,16 @@
                 </li>
             </ul>
         </div>
-        <div class="profile-menu text-white w-[30vh] transform transition min-h-screen -translate-x-full duration-200 ease-in-out mt-[11vh] bg-stone-900 lg:bg-stone-900 absolute md:block md:w-auto">
-
+{{--    Profile    --}}
+        <div class="profile-menu text-white w-[30vh] transform transition min-h-screen  -translate-x-full duration-200 ease-in-out mt-[11vh] bg-stone-900 lg:bg-stone-900 absolute md:block md:w-auto">
+            <div class="w-screen">
+                <img src="{{asset('image/profile.jpg')}}" class="rounded-full ml-[6vh] mt-[3vh] transition-transform hover:scale-125" width="140">
+                <h4 class="font-mono mt-1 p-3 pl-12">Ruel Flor Perez</h4>
+                <div class="flex mt-3">
+                    <a href="https://www.facebook.com/ruel.perez.5473894" target="_blank"><img src="{{asset('image/fb-icon.jpg')}}" class="rounded-full ml-[8vh] md:right-0 cursor-pointer transition-transform hover:scale-125" width="40"></a>
+                    <a href="https://github.com/ruelperez" target="_blank"><img src="{{asset('image/github-icon.jpg')}}" class="rounded-full ml-[4vh] cursor-pointer transition-transform hover:scale-125" width="40"></a>
+                </div>
+            </div>
         </div>
     </div>
     <nav class="bg-stone-900 border-gray-200 relative dark:bg-gray-900">
@@ -65,16 +73,6 @@
 {{--About--}}
     @if($base == 0)
         <div class="text-white">
-            <div class="w-screen">
-                <img src="{{asset('image/profile.jpg')}}" class="rounded-full ml-[16vh] mt-[3vh] transition-transform hover:scale-125" width="140">
-                <h4 class="font-mono mt-1 text-center">Ruel Flor Perez</h4>
-                <h5 class="text-sm text-center mt-1">Aspiring to become Software Engineer</h5>
-                <div class="flex mt-3">
-                    <a href="https://www.facebook.com/ruel.perez.5473894" target="_blank"><img src="{{asset('image/fb-icon.jpg')}}" class="rounded-full ml-[17vh] cursor-pointer transition-transform hover:scale-125" width="40"></a>
-                    <a href="https://github.com/ruelperez" target="_blank"><img src="{{asset('image/github-icon.jpg')}}" class="rounded-full ml-[4vh] cursor-pointer transition-transform hover:scale-125" width="40"></a>
-                </div>
-
-            </div>
             <div class="w-3/5">
                 <div class="flex ml-[25vh] mt-20">
                     <div class="w-1.5 h-10 bg-blue-500">
@@ -94,7 +92,15 @@
                         <h1>karuelflorperezz@gmail.com</h1>
                     </div>
                 </div>
-
+            </div>
+            <div class="w-screen">
+                <img src="{{asset('image/profile.jpg')}}" class="rounded-full ml-[16vh] mt-[3vh] transition-transform hover:scale-125" width="140">
+                <h4 class="font-mono mt-1 text-center">Ruel Flor Perez</h4>
+                <h5 class="text-sm text-center mt-1">Aspiring to become Software Engineer</h5>
+                <div class="flex mt-3">
+                    <a href="https://www.facebook.com/ruel.perez.5473894" target="_blank"><img src="{{asset('image/fb-icon.jpg')}}" class="rounded-full ml-[17vh] cursor-pointer transition-transform hover:scale-125" width="40"></a>
+                    <a href="https://github.com/ruelperez" target="_blank"><img src="{{asset('image/github-icon.jpg')}}" class="rounded-full ml-[4vh] cursor-pointer transition-transform hover:scale-125" width="40"></a>
+                </div>
             </div>
 
         </div>
@@ -193,5 +199,10 @@
     function clickBar(){
         var menu = document.querySelector('.mobile-menu');
         menu.classList.toggle('-translate-y-full');
+    }
+
+    function profile(){
+        var pro = document.querySelector('.profile-menu');
+        pro.classList.toggle('-translate-x-full');
     }
 </script>
