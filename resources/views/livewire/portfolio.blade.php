@@ -1,6 +1,6 @@
 <div>
     {{--    Profile    --}}
-    <div class="profile-menu text-white w-[30vh] transform transition min-h-screen  -translate-x-full duration-200 ease-in-out mt-[11vh] bg-stone-900 lg:bg-stone-900 absolute md:block md:w-auto">
+    <div class="md:hidden profile-menu text-white w-[30vh] transform transition min-h-screen  -translate-x-full duration-200 ease-in-out mt-[11vh] bg-stone-900 lg:bg-stone-900 absolute md:block md:w-auto">
         <div>
             <img src="{{asset('image/profile.jpg')}}" class="rounded-full ml-[6vh] mt-[3vh] transition-transform hover:scale-125" width="140">
             <h4 class="font-mono mt-1 p-3 pl-12">Ruel Flor Perez</h4>
@@ -269,31 +269,33 @@
             </div>
         </div>
 
-    @endif
-        {{--  Contact  --}}
+        @endif
+        {{--  Contact all breakpoint --}}
         @if($base == 4)
-            <div class="flex ml-[25vh] mt-20 text-white">
-                <div class="w-1.5 h-10 bg-blue-500">
-                </div>
-                <h2 class="text-3xl ml-2">Contact</h2>
+        <div class="flex ml-[5vh] mt-10 md:ml-[11vh] xl:ml-[15vh] text-white">
+            <div class="w-1 h-8 bg-blue-500">
             </div>
-            <div class="flex ml-[65vh] mt-[10vh] text-white">
-                <div class="bg-stone-900 w-[38vh] text-center pb-4 ">
-                    <i class="fa-solid fa-phone text-blue-500 text-4xl pt-4 transition-transform hover:scale-125"></i>
-                    <h1 class="text-1xl mt-2 transition-transform hover:scale-125">09955415702</h1>
+            <h2 class="text-2xl ml-2">Contact</h2>
+        </div>
+            <div class="mt-[5vh] md:pl-0 md:w-[71vh] md:ml-auto md:mr-auto px-10">
+                <div class="ml-auto md:flex md:w-[71vh] mr-auto text-white">
+                    <div class="bg-stone-900 md:w-[45vh] text-center pb-4 mb-5 md:mb-0">
+                        <i class="fa-solid fa-phone text-blue-500 text-4xl pt-4 transition-transform hover:scale-125"></i>
+                        <h1 class="text-1xl mt-2 transition-transform hover:scale-125">09955415702</h1>
+                    </div>
+                    <div class="bg-stone-900 text-center md:ml-3 pb-4 md:pb-0 md:pl-4 md:pr-4">
+                        <i class="fa-solid fa-envelope text-blue-500 text-4xl pt-4 transition-transform hover:scale-125"></i>
+                        <h1>karuelflorperezz@gmail.com</h1>
+                    </div>
                 </div>
-                <div class="bg-stone-900 w-[38vh] text-center ml-10 pb-4">
-                    <i class="fa-solid fa-envelope text-blue-500 text-4xl pt-4 transition-transform hover:scale-125"></i>
-                    <h1 class="transition-transform hover:scale-125">karuelflorperezz@gmail.com</h1>
-                </div>
-            </div>
-            <div class="w-[81.5vh] mt-10 ml-[65vh] bg-stone-900 text-white pt-4 pb-4">
-                <h1 class="text-2xl text-center">Connect Us</h1>
-                <div class="flex ml-[23vh] pt-3 pb-3">
-                    <a href="https://www.facebook.com/ruel.perez.5473894" target="_blank"><i class="fa-brands fa-facebook text-blue-600 text-4xl pt-4 transition-transform hover:scale-125 cursor-pointer"></i></a>
-                    <a href="https://github.com/ruelperez" target="_blank"><i class="fa-brands fa-github text-4xl pt-4 transition-transform hover:scale-125 ml-10 cursor-pointer"></i></a>
-                    <a href="https://www.instagram.com/ruelperez_matt/" target="_blank"><i class="fa-brands fa-instagram text-4xl pt-4 transition-transform hover:scale-125 ml-10 text-pink-600 cursor-pointer"></i></a>
-                    <a href="https://www.tiktok.com/@ruueel?_t=8eS3fEWRAqQ&_r=1" target="_blank"><i class="fa-brands fa-tiktok text-4xl pt-4 transition-transform hover:scale-125 ml-10 cursor-pointer"></i></a>
+                <div class="mt-5 md:w-[71vh] mr-auto ml-auto bg-stone-900 text-white pt-4 md:pt-2 pb-4">
+                    <h1 class="text-2xl text-center">Connect Us</h1>
+                    <div class="flex w-[35vh] ml-auto mr-auto mt-4">
+                        <a href="https://www.facebook.com/ruel.perez.5473894" target="_blank"><i class="fa-brands fa-facebook text-blue-600 text-4xl transition-transform hover:scale-125 cursor-pointer"></i></a>
+                        <a href="https://github.com/ruelperez" target="_blank"><i class="fa-brands fa-github text-4xl transition-transform hover:scale-125 ml-10 cursor-pointer"></i></a>
+                        <a href="https://www.instagram.com/ruelperez_matt/" target="_blank"><i class="fa-brands fa-instagram text-4xl transition-transform hover:scale-125 ml-10 text-pink-600 cursor-pointer"></i></a>
+                        <a href="https://www.tiktok.com/@ruueel?_t=8eS3fEWRAqQ&_r=1" target="_blank"><i class="fa-brands fa-tiktok text-4xl transition-transform hover:scale-125 ml-10 cursor-pointer"></i></a>
+                    </div>
                 </div>
             </div>
         @endif

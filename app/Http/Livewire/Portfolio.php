@@ -6,7 +6,7 @@ use Livewire\Component;
 
 class Portfolio extends Component
 {
-    public $base=3, $hover=0;
+    public $base=4, $hover=0;
     public function render()
     {
         return view('livewire.portfolio');
