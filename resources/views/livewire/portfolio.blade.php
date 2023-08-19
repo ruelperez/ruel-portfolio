@@ -113,8 +113,9 @@
 
         </div>
     @endif
-    {{--  Skills  --}}
+
     @if($base == 2)
+{{--   Skills (Mobile View)     --}}
         <div class="md:hidden">
             <div class="flex ml-[5vh] mt-10 md:ml-[11vh] text-white">
                 <div class="w-1 h-8 bg-blue-500">
@@ -154,6 +155,7 @@
                 </div>
             </div>
         </div>
+{{--  Skills (md,lg,xl)  --}}
         <div class="md:block hidden">
             <div class="flex ml-[5vh] mt-10 md:ml-[11vh] text-white">
                 <div class="w-1 h-8 bg-blue-500">
@@ -181,16 +183,19 @@
                     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><i class="fa-brands fa-css3-alt text-blue-500 text-8xl"></i></a>
                 </div>
             </div>
-            <div class="justify-between flex w-[60vh] ml-auto hidden mr-auto mt-8">
-                <div>
-                    <a href="https://tailwindcss.com/docs/guides/laravel" target="_blank"><img src="https://api.iconify.design/devicon:tailwindcss.svg" width="100"/></a>
-                </div>
-                <div>
-                    <a href="https://getbootstrap.com/" target="_blank"><i class="fa-brands fa-bootstrap text-violet-600 mr-20 text-7xl"></i></a>
-                </div>
-                <div>
-                </div>
+    <div class="hidden md:block">
+        <div class="justify-between flex w-[60vh] ml-auto  mr-auto mt-8">
+            <div>
+                <a href="https://tailwindcss.com/docs/guides/laravel" target="_blank"><img src="https://api.iconify.design/devicon:tailwindcss.svg" width="100"/></a>
             </div>
+            <div>
+                <a href="https://getbootstrap.com/" target="_blank"><i class="fa-brands fa-bootstrap text-violet-600 mr-20 text-8xl"></i></a>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+
         </div>
         @endif
         {{-- Project--}}
