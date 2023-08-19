@@ -245,7 +245,7 @@
                 <div class="mb-5">
                     <img wire:mouseover="hoverIn(1)" wire:mouseout="hoverOut" src="{{asset('image/tabulation.jpg')}}" class="h-[20vh] @if($hover == 1) opacity-50 @endif  rounded-lg">
                     @if($hover == 1)
-                        <div wire:mouseover="hoverIn(1)" wire:mouseout="hoverOut" class="bg-stone-600 w-[21vh] text-center px-3 py-3 text-white ml-14 absolute bottom-[3vh] rounded-lg h-[13vh]">
+                        <div wire:mouseover="hoverIn(1)" wire:mouseout="hoverOut" class="bg-stone-600 w-[21vh] text-center px-3 py-3 text-white ml-14 absolute bottom-[58vh] rounded-lg h-[13vh]">
                             <a href="https://github.com/ruelperez/event-tabulation" target="_blank"><img src="{{asset('image/github-icon.jpg')}}" class="rounded-full w-10 ml-12 cursor-pointer">Visit Repository</a>
                         </div>
                     @endif
@@ -253,7 +253,7 @@
                 <div class="mb-5">
                     <img wire:mouseover="hoverIn(2)" wire:mouseout="hoverOut" src="{{asset('image/kiosk.jpg')}}" class="h-[20vh] @if($hover == 2) opacity-50 @endif rounded-lg">
                     @if($hover == 2)
-                        <div wire:mouseover="hoverIn(2)" wire:mouseout="hoverOut" class="bg-stone-600 w-[21vh] text-center px-3 py-3 text-white ml-14 absolute bottom-[3vh] rounded-lg h-[13vh]">
+                        <div wire:mouseover="hoverIn(2)" wire:mouseout="hoverOut" class="bg-stone-600 w-[21vh] text-center px-3 py-3 text-white ml-14 absolute bottom-[35vh] rounded-lg h-[13vh]">
                             <a href="https://github.com/ruelperez/pre-enrollment" target="_blank"><img src="{{asset('image/github-icon.jpg')}}" class="rounded-full ml-[6.5vh] cursor-pointer" width="40">Visit Repository</a>
                         </div>
                     @endif
@@ -261,7 +261,7 @@
                 <div>
                     <img wire:mouseover="hoverIn(3)" wire:mouseout="hoverOut" src="{{asset('image/custodian.jpg')}}" class="h-[20vh] @if($hover == 3) opacity-50 @endif rounded-lg">
                     @if($hover == 3)
-                        <div wire:mouseover="hoverIn(3)" wire:mouseout="hoverOut" class="bg-stone-600 w-[21vh] text-center px-3 py-3 text-white ml-14 absolute bottom-[3vh] rounded-lg h-[13vh]">
+                        <div wire:mouseover="hoverIn(3)" wire:mouseout="hoverOut" class="bg-stone-600 w-[21vh] text-center px-3 py-3 text-white ml-14 absolute bottom-[13vh] rounded-lg h-[13vh]">
                             <a href="https://github.com/ruelperez/custodian" target="_blank"><img src="{{asset('image/github-icon.jpg')}}" class="rounded-full ml-[6.5vh] cursor-pointer" width="40">Visit Repository</a>
                         </div>
                     @endif
