@@ -1,4 +1,4 @@
-<div>
+<div class="relative">
     {{--    Profile    --}}
     <div class="md:hidden profile-menu text-white w-[30vh] transform transition min-h-screen  -translate-x-full duration-200 ease-in-out mt-[11vh] bg-stone-900 lg:bg-stone-900 absolute md:block md:w-auto">
         <div>
@@ -51,12 +51,20 @@
                     <div class="text-white font-mono mr-3">P E R E Z</div>
                 </div>
             </div>
+            @if($base == 3)
+                <div>
+                    <button onclick="clickProjectBar()" type="button" class= "p-1 w-10 h-10 text-sm text-gray-500 rounded-lg md:hidden ml-[5vh]  focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                        <i class="fa-solid fa-ellipsis-vertical text-white text-xl"></i>
+                    </button>
+                </div>
+            @else
+                <div>
+                    <button onclick="clickBar()" type="button" class= "p-1 w-10 h-10 text-sm text-gray-500 rounded-lg md:hidden ml-[5vh]  focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                        <i class="fa-solid fa-ellipsis-vertical text-white text-xl"></i>
+                    </button>
+                </div>
+            @endif
 
-            <div>
-                <button onclick="clickBar()" type="button" class= "p-1 w-10 h-10 text-sm text-gray-500 rounded-lg md:hidden ml-[5vh]  focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-                    <i class="fa-solid fa-ellipsis-vertical text-white text-xl"></i>
-                </button>
-            </div>
 
             <div class="md:text-white md:w-[40vh] md:ml-[50vh] md:right-[13vh] absolute xl:mr-20  invisible md:visible">
                 <ul class="md:font-medium md:bg-stone-900 md:flex md:p-4  md:mt-0 ">
@@ -242,31 +250,48 @@
                 <h2 class="text-2xl ml-2">Project</h2>
             </div>
             <div class="ml-auto mr-auto w-3/4 mt-8">
-                <div class="mb-5">
+                <div class="mb-5 relative">
                     <img wire:mouseover="hoverIn(1)" wire:mouseout="hoverOut" src="{{asset('image/tabulation.jpg')}}" class="h-[20vh] @if($hover == 1) opacity-50 @endif  rounded-lg">
                     @if($hover == 1)
-                        <div wire:mouseover="hoverIn(1)" wire:mouseout="hoverOut" class="bg-stone-600 w-[21vh] text-center px-3 py-3 text-white ml-14 absolute bottom-[58vh] rounded-lg h-[13vh]">
+                        <div wire:mouseover="hoverIn(1)" wire:mouseout="hoverOut" class="bg-stone-600 w-[21vh] text-center px-3 py-3 text-white ml-14 absolute bottom-6 rounded-lg h-[13vh]">
                             <a href="https://github.com/ruelperez/event-tabulation" target="_blank"><img src="{{asset('image/github-icon.jpg')}}" class="rounded-full w-10 ml-12 cursor-pointer">Visit Repository</a>
                         </div>
                     @endif
                 </div>
-                <div class="mb-5">
+                <div class="mb-5 relative">
                     <img wire:mouseover="hoverIn(2)" wire:mouseout="hoverOut" src="{{asset('image/kiosk.jpg')}}" class="h-[20vh] @if($hover == 2) opacity-50 @endif rounded-lg">
                     @if($hover == 2)
-                        <div wire:mouseover="hoverIn(2)" wire:mouseout="hoverOut" class="bg-stone-600 w-[21vh] text-center px-3 py-3 text-white ml-14 absolute bottom-[35vh] rounded-lg h-[13vh]">
+                        <div wire:mouseover="hoverIn(2)" wire:mouseout="hoverOut" class="bg-stone-600 w-[21vh] text-center px-3 py-3 text-white ml-14 absolute bottom-6 rounded-lg h-[13vh]">
                             <a href="https://github.com/ruelperez/pre-enrollment" target="_blank"><img src="{{asset('image/github-icon.jpg')}}" class="rounded-full ml-[6.5vh] cursor-pointer" width="40">Visit Repository</a>
                         </div>
                     @endif
                 </div>
-                <div>
+                <div class="relative">
                     <img wire:mouseover="hoverIn(3)" wire:mouseout="hoverOut" src="{{asset('image/custodian.jpg')}}" class="h-[20vh] @if($hover == 3) opacity-50 @endif rounded-lg">
                     @if($hover == 3)
-                        <div wire:mouseover="hoverIn(3)" wire:mouseout="hoverOut" class="bg-stone-600 w-[21vh] text-center px-3 py-3 text-white ml-14 absolute bottom-[13vh] rounded-lg h-[13vh]">
+                        <div wire:mouseover="hoverIn(3)" wire:mouseout="hoverOut" class="bg-stone-600 w-[21vh] text-center px-3 py-3 text-white ml-14 absolute bottom-6 rounded-lg h-[13vh]">
                             <a href="https://github.com/ruelperez/custodian" target="_blank"><img src="{{asset('image/github-icon.jpg')}}" class="rounded-full ml-[6.5vh] cursor-pointer" width="40">Visit Repository</a>
                         </div>
                     @endif
                 </div>
             </div>
+        </div>
+
+        <div class="mobile-project text-white w-[40vh] absolute md:hidden top-20  transform transition -translate-x-full duration-200 ease-in-out left-0 bg-stone-900 lg:bg-stone-900">
+            <ul class="font-medium flex-col p-4">
+                <li class="cursor-pointer p-1 text-white @if($base == 0) bg-stone-500 @endif" wire:click="nav_click(0)">
+                    About
+                </li>
+                <li class="cursor-pointer p-1 text-white @if($base == 2) bg-stone-500 @endif" wire:click="nav_click(2)">
+                    Skills
+                </li>
+                <li class="cursor-pointer p-1 text-white @if($base == 3) bg-stone-500 @endif" wire:click="nav_click(3)">
+                    Project
+                </li>
+                <li class="cursor-pointer p-1 text-white @if($base == 4) bg-stone-500 @endif" wire:click="nav_click(4)">
+                    Contact
+                </li>
+            </ul>
         </div>
 
         @endif
@@ -306,6 +331,15 @@
     function clickBar(){
         var menu = document.querySelector('.mobile-menu');
         menu.classList.toggle('-translate-y-full');
+
+
+    }
+    function clickProjectBar(){
+        var menu = document.querySelector('.mobile-project');
+        menu.classList.toggle('-translate-x-full');
+        menu.classList.remove('left-0');
+        menu.classList.toggle('left-8');
+
     }
 
     function profile(){
