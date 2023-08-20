@@ -1,6 +1,6 @@
 <div class="relative">
     {{--    Profile    --}}
-    <div class="md:hidden profile-menu text-white w-[30vh] transform transition min-h-screen  -translate-x-full duration-200 ease-in-out mt-[11vh] bg-stone-900 lg:bg-stone-900 absolute md:block md:w-auto">
+    <div class="md:hidden profile-menu text-white w-[30vh] transform transition min-h-screen  -translate-x-full duration-200 ease-in-out mt-[11vh] bg-stone-900  absolute">
         <div>
             <img src="{{asset('image/profile.jpg')}}" class="rounded-full ml-[6vh] mt-[3vh] transition-transform hover:scale-125" width="140">
             <h4 class="font-mono mt-1 p-3 pl-12">Ruel Flor Perez</h4>
@@ -39,9 +39,16 @@
     </div>
     <nav class="bg-stone-900 border-gray-200 relative dark:bg-gray-900">
         <div class="max-w-screen-xl flex justify-between md:justify-between items-center p-2">
-            <div class="ml-3 md:hidden">
-                <i class="fa-solid fa-bars text-white text-xl" onclick="profile()"></i>
-            </div>
+            @if($base == 3)
+                <div class="ml-3 md:hidden">
+                    <i class="fa-solid fa-bars text-white text-xl" onclick="profileProjectPage()"></i>
+                </div>
+            @else
+                <div class="ml-3 md:hidden">
+                    <i class="fa-solid fa-bars text-white text-xl" onclick="profile()"></i>
+                </div>
+            @endif
+
             <div class="ml-[5.5vh] md:ml-[7vh] xl:ml-[12vh]">
                 <div class="logo flex">
                     <h3 class="text-white p-1 ml-10  text-3xl">Ruel</h3><h3 class="text-blue-500 pt-1 text-3xl">Dev</h3>
@@ -64,7 +71,6 @@
                     </button>
                 </div>
             @endif
-
 
             <div class="md:text-white md:w-[40vh] md:ml-[50vh] md:right-[13vh] absolute xl:mr-20  invisible md:visible">
                 <ul class="md:font-medium md:bg-stone-900 md:flex md:p-4  md:mt-0 ">
@@ -276,7 +282,7 @@
                 </div>
             </div>
         </div>
-
+{{-- Navbar for Project page (Mobile view)--}}
         <div class="mobile-project text-white w-[40vh] absolute md:hidden top-20  transform transition -translate-x-full duration-200 ease-in-out left-0 bg-stone-900 lg:bg-stone-900">
             <ul class="font-medium flex-col p-4">
                 <li class="cursor-pointer p-1 text-white @if($base == 0) bg-stone-500 @endif" wire:click="nav_click(0)">
@@ -292,6 +298,25 @@
                     Contact
                 </li>
             </ul>
+        </div>
+
+        <div class="md:hidden profile-project text-white w-[30vh] -translate-x-full transform transition min-h-screen duration-200 ease-in-out top-20 bg-stone-900  absolute">
+            <div>
+                <img src="{{asset('image/profile.jpg')}}" class="rounded-full ml-[6vh] mt-[3vh] transition-transform hover:scale-125" width="140">
+                <h4 class="font-mono mt-1 p-3 pl-12">Ruel Flor Perez</h4>
+                <div class="flex mt-3">
+                    <a href="https://www.facebook.com/ruel.perez.5473894" target="_blank"><img src="{{asset('image/fb-icon.jpg')}}" class="rounded-full ml-[8vh] md:right-0 cursor-pointer transition-transform hover:scale-125" width="40"></a>
+                    <a href="https://github.com/ruelperez" target="_blank"><img src="{{asset('image/github-icon.jpg')}}" class="rounded-full ml-[4vh] cursor-pointer transition-transform hover:scale-125" width="40"></a>
+                </div>
+                <div class="bg-stone-900 w-[30vh] text-center pb-4 mt-7">
+                    <i class="fa-solid fa-phone text-blue-500 text-2xl pt-4"></i>
+                    <h1 class="text-1xl mt-2">09955415702</h1>
+                </div>
+                <div class="w-[28vh] text-center mt-5 ml-2 p-3">
+                    <i class="fa-solid fa-envelope text-blue-500 text-2xl"></i>
+                    <h5 class="text-sm">karuelflorperezz@gmail.com</h5>
+                </div>
+            </div>
         </div>
 
         @endif
@@ -344,6 +369,11 @@
 
     function profile(){
         var pro = document.querySelector('.profile-menu');
+        pro.classList.toggle('-translate-x-full');
+    }
+
+    function profileProjectPage(){
+        var pro = document.querySelector('.profile-project');
         pro.classList.toggle('-translate-x-full');
     }
 
