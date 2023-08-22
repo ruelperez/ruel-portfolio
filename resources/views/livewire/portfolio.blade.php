@@ -223,26 +223,26 @@
             </div>
             <div class="ml-auto mr-auto w-3/4 mt-12 grid grid-cols-3 gap-5">
                 <div class="relative">
-                    <img wire:mouseover="hoverIn(1)" wire:mouseout="hoverOut" src="{{asset('image/tabulation.jpg')}}" class="w-80 h-[30vh] @if($hover == 1) opacity-50 @endif xl:h-[45vh] object-cover rounded-lg cursor-pointer lg:h-[35vh]">
+                    <img wire:mouseover="hoverIn(1)" wire:mouseout="hoverOut" src="{{asset('image/tabulation.jpg')}}" class="w-full h-[30vh] @if($hover == 1) opacity-50 @endif xl:h-[45vh] object-cover rounded-lg cursor-pointer lg:h-[35vh]">
                     @if($hover == 1)
-                         <div wire:mouseover="hoverIn(1)" wire:mouseout="hoverOut" class="bg-stone-600 w-[22vh] text-center px-3 py-3 text-white ml-4 absolute bottom-[7vh] rounded-lg h-[15vh] lg:ml-12 lg:bottom-[10vh] xl:ml-[13vh] xl:bottom-[14vh]">
-                                <a href="https://github.com/ruelperez/event-tabulation" target="_blank"><img src="{{asset('image/github-icon.jpg')}}" class="rounded-full w-10 ml-10 cursor-pointer">Visit Repository</a>
+                         <div wire:mouseover="hoverIn(1)" wire:mouseout="hoverOut" class="bg-stone-600 w-2/4 text-center text-white absolute top-0 rounded-lg h-[15vh]">
+                                <a href="https://github.com/ruelperez/event-tabulation" target="_blank"><img src="{{asset('image/github-icon.jpg')}}" class="rounded-full w-10 ml-auto mr-auto mt-3 cursor-pointer"><h4 class="text-sm mt-1 xl:text-base">Visit Repository</h4></a>
                          </div>
                     @endif
                 </div>
                 <div class="relative">
-                    <img wire:mouseover="hoverIn(2)" wire:mouseout="hoverOut" src="{{asset('image/kiosk.jpg')}}" class="w-80 h-[30vh] @if($hover == 2) opacity-50 @endif xl:h-[45vh] object-cover rounded-lg cursor-pointer lg:h-[35vh]">
+                    <img wire:mouseover="hoverIn(2)" wire:mouseout="hoverOut" src="{{asset('image/kiosk.jpg')}}" class="w-full h-[30vh] @if($hover == 2) opacity-50 @endif xl:h-[45vh] object-cover rounded-lg cursor-pointer lg:h-[35vh]">
                     @if($hover == 2)
-                         <div wire:mouseover="hoverIn(2)" wire:mouseout="hoverOut" class="bg-stone-600 w-[22vh] text-center px-3 py-3 text-white ml-4 absolute bottom-[7vh] rounded-lg h-[15vh] lg:ml-12 lg:bottom-[10vh] xl:ml-[13vh] xl:bottom-[14vh]">
-                            <a href="https://github.com/ruelperez/pre-enrollment" target="_blank"><img src="{{asset('image/github-icon.jpg')}}" class="rounded-full ml-[6.5vh] cursor-pointer" width="40">Visit Repository</a>
+                         <div wire:mouseover="hoverIn(2)" wire:mouseout="hoverOut" class="bg-stone-600 w-2/4 text-center text-white absolute top-0 rounded-lg h-[15vh]">
+                            <a href="https://github.com/ruelperez/pre-enrollment" target="_blank"><img src="{{asset('image/github-icon.jpg')}}" class="rounded-full w-10 ml-auto mr-auto mt-3 cursor-pointer"><h4 class="text-sm mt-1 xl:text-base">Visit Repository</h4></a>
                         </div>
                     @endif
                 </div>
                 <div class="relative">
-                    <img wire:mouseover="hoverIn(3)" wire:mouseout="hoverOut" src="{{asset('image/custodian.jpg')}}" class=" @if($hover == 3) opacity-50 @endif w-80 h-[30vh] xl:h-[45vh] object-cover rounded-lg cursor-pointer lg:h-[35vh]">
+                    <img wire:mouseover="hoverIn(3)" wire:mouseout="hoverOut" src="{{asset('image/custodian.jpg')}}" class="w-full h-[30vh] @if($hover == 3) opacity-50 @endif xl:h-[45vh] object-cover rounded-lg cursor-pointer lg:h-[35vh]">
                     @if($hover == 3)
-                        <div wire:mouseover="hoverIn(3)" wire:mouseout="hoverOut" class="bg-stone-600 w-[22vh] text-center px-3 py-3 text-white ml-4 absolute bottom-[7vh] rounded-lg h-[15vh] lg:ml-12 lg:bottom-[10vh] xl:ml-[13vh] xl:bottom-[14vh]">
-                                <a href="https://github.com/ruelperez/custodian" target="_blank"><img src="{{asset('image/github-icon.jpg')}}" class="rounded-full ml-[6.5vh] cursor-pointer" width="40">Visit Repository</a>
+                        <div wire:mouseover="hoverIn(3)" wire:mouseout="hoverOut" class="bg-stone-600 w-2/4 text-center text-white absolute top-0 rounded-lg h-[15vh]">
+                                <a href="https://github.com/ruelperez/custodian" target="_blank"><img src="{{asset('image/github-icon.jpg')}}" class="rounded-full w-10 ml-auto mr-auto mt-3 cursor-pointer"><h4 class="text-sm mt-1 xl:text-base">Visit Repository</h4></a>
                         </div>
                     @endif
                 </div>
